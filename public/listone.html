@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Profile | Harika Care</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<header>
+    <div class="brand"><div class="brand-logo">HC</div><div><h2>HARIKA CARE</h2><p>YOUR HEALTH, OUR PRIORITY</p></div></div>
+    <nav><a href="index.html">Home</a><a href="insert.html">Register</a><a href="list.html">Records</a><a href="listone.html">Patient</a><a href="update.html">Update</a><a href="delete.html">Delete</a></nav>
+</header>
+
+<main>
+    <section class="hero one-hero">
+        <div class="hero-content">
+            <div class="eyebrow">✦ PATIENT PROFILE</div>
+            <h1>One patient.<br><span>All the details.</span></h1>
+            <p>Select a patient ID to view the corresponding record from your database.</p>
+        </div>
+    </section>
+
+    <section class="form-card">
+        <div class="page-heading"><h1>Find a patient</h1><p>Choose a registered patient from the dropdown.</p></div>
+        <div class="form-group">
+            <label for="onePatientId">Patient ID</label>
+            <select id="onePatientId"><option value="">Loading patient IDs...</option></select>
+        </div>
+        <div id="message" class="message" role="status"></div>
+        <div id="patientDetails" class="details-grid" style="margin-top:22px"></div>
+    </section>
+</main>
+
+<footer>© 2026 <span>HARIKA CARE</span> · Patient Profile</footer>
+</body>
+</html>

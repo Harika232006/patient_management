@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Records | Harika Care</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<header>
+    <div class="brand"><div class="brand-logo">HC</div><div><h2>HARIKA CARE</h2><p>YOUR HEALTH, OUR PRIORITY</p></div></div>
+    <nav><a href="index.html">Home</a><a href="insert.html">Register</a><a href="list.html">Records</a><a href="listone.html">Patient</a><a href="update.html">Update</a><a href="delete.html">Delete</a></nav>
+</header>
+
+<main>
+    <section class="hero list-hero">
+        <div class="hero-content">
+            <div class="eyebrow">✦ RECORDS WORKSPACE</div>
+            <h1>All records.<br><span>One clear view.</span></h1>
+            <p>View registered patients and search the records using patient ID, name, phone or problem.</p>
+            <div class="hero-actions"><a class="btn btn-primary" href="insert.html">+ Register Patient</a></div>
+        </div>
+    </section>
+
+    <div class="section-heading">
+        <div><h2>Patient directory</h2><p>Records loaded from the database.</p></div>
+        <button type="button" class="btn btn-secondary" onclick="loadPatients()">↻ Refresh</button>
+    </div>
+
+    <section class="form-card">
+        <div class="form-group">
+            <label for="searchPatient">Search patient records</label>
+            <input id="searchPatient" type="search" placeholder="Search ID, name, phone, gender or problem...">
+        </div>
+        <div id="listMessage" class="message" role="status"></div>
+    </section>
+
+    <section class="table-card">
+        <table>
+            <thead><tr><th>ID</th><th>Name</th><th>Email</th><th>Phone</th><th>Gender</th><th>Age</th><th>Problem</th></tr></thead>
+            <tbody id="patientRows"><tr><td colspan="7">Loading records...</td></tr></tbody>
+        </table>
+    </section>
+</main>
+
+<footer>© 2026 <span>HARIKA CARE</span> · Patient Directory</footer>
+</body>
+</html>
